@@ -11,6 +11,7 @@
 
 @interface CalculatorViewController : UIViewController {
 	IBOutlet UILabel *display;
+	IBOutlet UILabel *memory;
 	CalculatorBrain *brain;
 	BOOL userIsInTheMiddleOfTypingANumber;
 	BOOL IsDecimalEntered;

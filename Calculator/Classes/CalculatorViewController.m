@@ -40,6 +40,7 @@
 	NSString *operation = [[sender titleLabel] text];
 	double result = [[self brain] performOperation:operation];
 	[display setText:[NSString stringWithFormat:@"%g", result]];
+	[memory setText:[NSString stringWithFormat:@"%g", [[self brain] exportMem]]];
 }
 
 - (IBAction)decimalPressed:(UIButton *)sender

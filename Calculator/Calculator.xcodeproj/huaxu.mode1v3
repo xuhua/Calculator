@@ -271,8 +271,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>5</integer>
-									<integer>1</integer>
+									<integer>11</integer>
+									<integer>9</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -314,7 +314,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>CalculatorViewController.m</string>
+								<string>CalculatorBrain.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -322,19 +322,19 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>CalculatorViewController.m</string>
+										<string>CalculatorBrain.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>4FFE80ED12C83DE000DC7966</string>
+										<string>4FFE811F12C8441600DC7966</string>
 										<key>history</key>
 										<array>
 											<string>4FFE807012C71DEC00DC7966</string>
 											<string>4FFE808A12C7B11400DC7966</string>
 											<string>4FFE80BA12C8381E00DC7966</string>
-											<string>4FFE80C412C8395A00DC7966</string>
 											<string>4FFE80E912C83DB100DC7966</string>
-											<string>4FFE80EA12C83DB100DC7966</string>
+											<string>4FFE80F512C83F1100DC7966</string>
+											<string>4FFE810A12C8421000DC7966</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -532,9 +532,9 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>4F00912212C6E86500D79E28</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/huaxu/Documents/iOS Programs/Calculator/Calculator/Calculator.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -554,12 +554,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>CalculatorViewController.m</string>
+								<string>CalculatorBrain.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -576,8 +578,6 @@
 							<string>218pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -886,7 +886,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {650, 209}}</string>
 								<key>RubberWindowFrame</key>
-								<string>587 773 650 250 0 0 1920 1178 </string>
+								<string>781 732 650 250 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXDebugCLIModule</string>
@@ -915,11 +915,11 @@
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.consoleV3</string>
 			<key>WindowString</key>
-			<string>587 773 650 250 0 0 1920 1178 </string>
+			<string>781 732 650 250 0 0 1920 1178 </string>
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

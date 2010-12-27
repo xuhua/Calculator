@@ -13,10 +13,12 @@
 	IBOutlet UILabel *display;
 	CalculatorBrain *brain;
 	BOOL userIsInTheMiddleOfTypingANumber;
+	BOOL IsDecimalEntered;
 }
 
 - (IBAction)digitPressed:(UIButton *)sender;
 - (IBAction)operationPressed:(UIButton *)sender;
+- (IBAction)decimalPressed:(UIButton *)sender;
 
 @end
 

@@ -35,10 +35,25 @@
 	if (userIsInTheMiddleOfTypingANumber) {
 		[[self brain] setOperand:[[display text] doubleValue]];
 		userIsInTheMiddleOfTypingANumber = NO;
+		IsDecimalEntered = NO;
 	}
 	NSString *operation = [[sender titleLabel] text];
 	double result = [[self brain] performOperation:operation];
 	[display setText:[NSString stringWithFormat:@"%g", result]];
+}
+
+- (IBAction)decimalPressed:(UIButton *)sender
+{
+	if (!IsDecimalEntered) {
+		NSString *point = [[sender titleLabel] text];
+		if (userIsInTheMiddleOfTypingANumber) {
+			[display setText:[[display text] stringByAppendingString:point]];
+		} else {
+			[display setText:point];
+			userIsInTheMiddleOfTypingANumber = YES;
+		}
+		IsDecimalEntered = YES;
+	}
 }
 
 @end

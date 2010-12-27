@@ -14,9 +14,10 @@
 {
 	if (!brain) {
 		brain = [[CalculatorBrain alloc] init];
-		return brain;
 	}
+	return brain;
 }
+	
 - (IBAction)digitPressed:(UIButton *)sender
 {
 	NSString *digit = [[sender titleLabel] text];

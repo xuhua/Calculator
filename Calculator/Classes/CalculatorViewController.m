@@ -57,4 +57,20 @@
 	}
 }
 
+- (IBAction)backspacePressed:(UIButton *)sender
+{
+	NSUInteger index = [[display text] length];
+	/* If length of string showed on label is < 0, we change it to 0*/
+	if (index > 1) { 
+		if (userIsInTheMiddleOfTypingANumber) {
+			[display setText:[[display text] substringToIndex:(index-1)]];
+		} else {
+			userIsInTheMiddleOfTypingANumber = YES;
+		}
+		
+	} else {
+		[display setText:@"0"];
+	}
+}
+
 @end

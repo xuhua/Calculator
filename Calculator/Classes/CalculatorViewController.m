@@ -42,6 +42,19 @@
 	}
 	NSString *operation = [[sender titleLabel] text];
 	double result = [[self brain] performOperation:operation];
+	NSString *errorMessage = [[self brain] exportErrorMessage];
+	if (![errorMessage isEqual:@""]) {
+		NSString *message;
+		if ([errorMessage isEqual:@"error_sqrt"]) {
+			message = @"Can not square root of negative number!";
+		} else if ([errorMessage isEqual:@"error_zeroDivide"]) {
+			message = @"Can not divide by zero!";
+		}
+		UIAlertView *alertView = [UIAlertView alloc];
+		[alertView initWithTitle:errorMessage message:message delegate:nil cancelButtonTitle:@"Cancel" otherButtonTitles:nil];
+		[alertView show];
+		[alertView release];
+	}
 	[display setText:[NSString stringWithFormat:@"%g", result]];
 	[memory setText:[NSString stringWithFormat:@"%g", [[self brain] exportMem]]];
 }

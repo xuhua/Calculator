@@ -21,13 +21,16 @@
 - (IBAction)digitPressed:(UIButton *)sender
 {
 	NSString *digit = [[sender titleLabel] text];
-	if (userIsInTheMiddleOfTypingANumber) {
-		[display setText:[[display text] stringByAppendingString:digit]];
+	if ([@"pi" isEqual:digit]) {
+		digit = @"3.1415926";
+		[display setText:digit];
+		userIsInTheMiddleOfTypingANumber = YES;
+	} else if (userIsInTheMiddleOfTypingANumber) {
+			[display setText:[[display text] stringByAppendingString:digit]];
 	} else {
 		[display setText:digit];
 		userIsInTheMiddleOfTypingANumber = YES;
 	}
-
 }
 
 - (IBAction)operationPressed:(UIButton *)sender

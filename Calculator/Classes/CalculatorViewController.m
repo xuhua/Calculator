@@ -89,4 +89,15 @@
 	}
 }
 
+- (IBAction)degreeSwitch:(UISwitch *)sender
+{
+	NSLog(@"%d",sender.on);
+	[[self brain] setDegreeMode:sender.on];
+	if (sender.on) {
+		[DegreeDisp setText:@"Degree"];
+	} else {
+		[DegreeDisp setText:@"Radians"];
+	}
+}
+
 @end

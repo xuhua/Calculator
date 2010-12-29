@@ -56,6 +56,7 @@
 		[alertView release];
 	}
 	[display setText:[NSString stringWithFormat:@"%g", result]];
+	[ShowTwoOperand setText:[[self brain]exportWaittingOperation]];
 	[memory setText:[NSString stringWithFormat:@"%g", [[self brain] exportMem]]];
 }
 

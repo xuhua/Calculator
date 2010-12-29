@@ -13,6 +13,7 @@
 	IBOutlet UILabel *display;
 	IBOutlet UILabel *memory;
 	IBOutlet UILabel *DegreeDisp;
+	IBOutlet UILabel *ShowTwoOperand;
 	CalculatorBrain *brain;
 	BOOL userIsInTheMiddleOfTypingANumber;
 	BOOL IsDecimalEntered;
